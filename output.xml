@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.13 on win32)" generated="20220723 17:41:40.468" rpa="false" schemaversion="2">
+<suite id="s1" name="One" source="C:\Users\vikrantp\OneDrive - AMDOCS\Backup Folders\Desktop\skill\one.robot">
+<test id="s1-t1" name="TC_1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.oneplus.in/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220723 17:41:40.934" level="INFO">Opening browser 'Chrome' to base url 'https://www.oneplus.in/'.</msg>
+<status status="PASS" starttime="20220723 17:41:40.934" endtime="20220723 17:41:49.586"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220723 17:41:49.588" endtime="20220723 17:41:49.758"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220723 17:41:54.768" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220723 17:41:49.759" endtime="20220723 17:41:54.768"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:40.932" endtime="20220723 17:41:54.769"/>
+</test>
+<test id="s1-t2" name="TC_2">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>Xpath = //*[@id="nav-pages-slide"]/li[1]/a/span[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220723 17:41:54.771" level="INFO">Simulating Mouse Over on element 'Xpath = //*[@id="nav-pages-slide"]/li[1]/a/span[1]'.</msg>
+<status status="PASS" starttime="20220723 17:41:54.771" endtime="20220723 17:41:55.083"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220723 17:41:58.095" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220723 17:41:55.084" endtime="20220723 17:41:58.095"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${elem}</var>
+<arg>xpath://*[@id="nav-pages-slide"]/li[1]/nav/div/ul[1]/li/a/span</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220723 17:41:58.106" level="INFO">${elem} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="0ca28002-7c53-474b-8671-a7ec123ed6c1")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20220723 17:41:58.095" endtime="20220723 17:41:58.106"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{elem}</value>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="0ca28002-7c53-474b-8671-a7ec123ed6c1")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.106" endtime="20220723 17:41:58.117"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.106" endtime="20220723 17:41:58.117"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="dd4fc3de-40a8-4cd7-bb28-bc6350033157")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.118" endtime="20220723 17:41:58.129"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.117" endtime="20220723 17:41:58.129"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="004aec7d-a783-465f-b51a-615cf549f89d")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.129" endtime="20220723 17:41:58.139"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.129" endtime="20220723 17:41:58.139"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="f536a67a-2059-4257-8ae8-2c9e93ac6750")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.139" endtime="20220723 17:41:58.150"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.139" endtime="20220723 17:41:58.150"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="e98f977f-4355-440c-bad3-2b816f1b7c53")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.151" endtime="20220723 17:41:58.162"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.150" endtime="20220723 17:41:58.162"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="f2eb3512-2e87-434c-97f6-3b200a7ce36c")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.162" endtime="20220723 17:41:58.173"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.162" endtime="20220723 17:41:58.173"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="f8d784a6-1dc5-4015-85b0-d6b939de5383")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.173" endtime="20220723 17:41:58.185"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.173" endtime="20220723 17:41:58.185"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="fd92feea-e2b9-47cd-86c1-5177f5f0a792")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.185" endtime="20220723 17:41:58.199"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.185" endtime="20220723 17:41:58.199"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="43af5e40-0248-4c53-8024-94d9107af983")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.199" endtime="20220723 17:41:58.214"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.199" endtime="20220723 17:41:58.214"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="12ed12655a231306b8e47816d51f990b", element="94677e49-9b22-47cc-9282-b1fe1270bbb6")&gt;</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Item: ${item.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220723 17:41:58.215" endtime="20220723 17:41:58.230"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.215" endtime="20220723 17:41:58.230"/>
+</iter>
+<status status="PASS" starttime="20220723 17:41:58.106" endtime="20220723 17:41:58.230"/>
+</for>
+<status status="PASS" starttime="20220723 17:41:54.770" endtime="20220723 17:41:58.231"/>
+</test>
+<test id="s1-t3" name="TC_3">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>Xpath = //ul[@id='nav-pages-slide']/li[2]/a/span[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220723 17:41:58.235" level="INFO">Simulating Mouse Over on element 'Xpath = //ul[@id='nav-pages-slide']/li[2]/a/span[1]'.</msg>
+<status status="PASS" starttime="20220723 17:41:58.234" endtime="20220723 17:41:58.565"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220723 17:42:01.566" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220723 17:41:58.565" endtime="20220723 17:42:01.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath = //ul[@id='nav-pages-slide']/li[2]/a/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220723 17:42:01.567" level="INFO">Clicking element 'Xpath = //ul[@id='nav-pages-slide']/li[2]/a/span[1]'.</msg>
+<status status="PASS" starttime="20220723 17:42:01.566" endtime="20220723 17:42:01.677"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220723 17:42:06.691" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220723 17:42:01.678" endtime="20220723 17:42:06.691"/>
+</kw>
+<status status="PASS" starttime="20220723 17:41:58.232" endtime="20220723 17:42:06.692"/>
+</test>
+<test id="s1-t4" name="TC_04">
+<status status="FAIL" starttime="20220723 17:42:06.696" endtime="20220723 17:42:06.697">Test case contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20220723 17:41:40.471" endtime="20220723 17:42:06.699"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="One">One</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
